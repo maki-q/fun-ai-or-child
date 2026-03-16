@@ -293,14 +293,16 @@ export default function AIOrChild() {
 const styles: Record<string, React.CSSProperties> = {
   container: {
     position: "fixed",
-    inset: 0,
+    top: 64,
+    left: 0,
+    right: 0,
+    bottom: 0,
     backgroundColor: "#1a1a2e",
     color: "#e5e5e5",
     fontFamily: "system-ui, -apple-system, sans-serif",
     display: "flex",
     flexDirection: "column",
     overflow: "hidden",
-    zIndex: 50,
   },
   loading: {
     flex: 1,
@@ -416,6 +418,7 @@ const styles: Record<string, React.CSSProperties> = {
     flexShrink: 0,
     display: "flex",
     justifyContent: "center",
+    backgroundColor: "#1a1a2e",
   },
   buttonRow: {
     display: "flex",
